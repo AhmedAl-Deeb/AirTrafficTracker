@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5, user-scalable=yes" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <title>ATT - Air Traffic Tracker</title>
+  <link rel="icon" type="image/x-icon" href="Public/imgs/comp/favicon.ico">
+  <meta name="description" content="Air Traffic Tracker Website, Track any flight anywhere in anytime" />
+  <meta name="author" content="Zero&Zeskar" />
+  <meta name="theme-color" content="#1a1a2e" />
+  <link rel="stylesheet" href="Public/css/style.css" />
+  <link rel="stylesheet" href="Public/css/airlines.css" />
+  <script defer src="Public/airplanes.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+  <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+</head>
+<body>
+  <header class="header glassy">
+    <div id="logo">
+      <a href="index.html" id="logo" class="logo-link">
+        <img src="Public/imgs/comp/logo.png" alt="ATT Logo" />
+        <h1>Air Traffic Tracker</h1>
+      </a>
+    </div>
+    <nav class="desktop-nav">
+      <ul class="listItems">
+        <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+        <li><a href="airlines.html"><i class="fas fa-plane"></i> Airlines</a></li>
+        <li><a href="airplanes.html"><i class="fas fa-plane-departure"></i> Airplanes</a></li>
+        <li><a href="about.html"><i class="fas fa-info-circle"></i> About</a></li>
+      </ul>
+    </nav>
+    <button class="mobile-menu-btn" aria-label="Toggle Menu">
+      <i class="fas fa-bars"></i>
+    </button>
+  </header>
+
+  <main>
+  <div class="airlines-page">
+    <div class="container">
+      <h1>Airlines</h1>
+      
+      <!-- First Row: Card Left, Plane Right -->
+      <div class="airline-row">
+          <div class="airline-card">
+              <div class="airline-logo">
+                  <img src="Public/imgs/airlinesLogos/southwest.png" alt="Southwest Airlines Logo">
+              </div>
+              <div class="airline-name">Southwest Airlines</div>
+              <div class="airline-info">
+                  Southwest Airlines is a major American airline headquartered in Dallas, Texas. It is known for its low-cost fares and no-frills service, making air travel accessible to millions of passengers annually across the United States.
+              </div>
+          </div>
+          
+          <div class="plane-container">
+              <img class="plane-img animate-plane" src="Public/imgs/airlinesPlanes/sw.png" alt="Southwest Airlines Plane">
+          </div>
+          
+          <div class="arrow">
+              <svg viewBox="0 0 24 40" fill="none">
+                  <path d="M12 4L12 36" stroke="white" stroke-width="2" stroke-linecap="round"/>
+                  <path d="M18 30L12 36L6 30" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+          </div>
+      </div>
+
+      <!-- Second Row: Plane Left, Card Right -->
+      <div class="airline-row">
+          <div class="plane-container">
+              <img class="plane-img animate-plane" src="Public/imgs/airlinesPlanes/egypt.png" alt="EgyptAir Plane">
+          </div>
+          
+          <div class="airline-card">
+              <div class="airline-logo">
+                  <img src="Public/imgs/airlinesLogos/egypt.png" alt="EgyptAir Logo">
+              </div>
+              <div class="airline-name">EgyptAir</div>
+              <div class="airline-info">
+                  EgyptAir is the flag carrier of Egypt, headquartered in Cairo. As a member of the Star Alliance, it operates scheduled passenger and cargo services to over 75 destinations in the Middle East, Europe, Africa, Asia, and the Americas.
+              </div>
+          </div>
+          
+          <div class="arrow">
+              <svg viewBox="0 0 24 40" fill="none">
+                  <path d="M12 4L12 36" stroke="white" stroke-width="2" stroke-linecap="round"/>
+                  <path d="M18 30L12 36L6 30" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+          </div>
+      </div>
+      
+      <!-- Third Row: Card Left, Plane Right -->
+      <div class="airline-row">
+          <div class="airline-card">
+              <div class="airline-logo">
+                  <img src="Public/imgs/airlinesLogos/Emirates Airlines Logo - Download Free PNG.png" alt="Emirates Logo">
+              </div>
+              <div class="airline-name">Emirates</div>
+              <div class="airline-info">
+                  Emirates is one of the world's largest international airlines, based in Dubai, United Arab Emirates. Known for luxury and exceptional service, Emirates connects passengers to destinations across six continents with its modern fleet of aircraft.
+              </div>
+          </div>
+          
+          <div class="plane-container">
+              <img class="plane-img animate-plane" src="Public/imgs/airlinesPlanes/emirates.png" alt="Emirates Plane">
+          </div>
+          
+          <div class="arrow">
+              <svg viewBox="0 0 24 40" fill="none">
+                  <path d="M12 4L12 36" stroke="white" stroke-width="2" stroke-linecap="round"/>
+                  <path d="M18 30L12 36L6 30" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+          </div>
+      </div>
+      
+      <!-- Fourth Row: Plane Left, Card Right -->
+      <div class="airline-row">
+          <div class="plane-container">
+              <img class="plane-img animate-plane" src="Public/imgs/airlinesPlanes/Britain.png" alt="Air Britain Plane">
+          </div>
+          
+          <div class="airline-card">
+              <div class="airline-logo">
+                  <img src="Public/imgs/airlinesLogos/airbritain.png" alt="Air Britain  Logo">
+              </div>
+              <div class="airline-name">Air Britain</div>
+              <div class="airline-info">
+                  Air Britain is a fictional airline name often used in aviation mockups and concepts. If referring to the historical aviation society, Air-Britain is a UK-based organization dedicated to the preservation and study of aviation history worldwide.
+              </div>
+          </div>
+      </div>
+
+      <!-- Fifth Row: Card Left, Plane Right -->
+      <div class="airline-row">
+          <div class="airline-card">
+              <div class="airline-logo">
+                  <img src="Public/imgs/airlinesLogos/lufthansa.png" alt="Lufthansa Logo">
+              </div>
+              <div class="airline-name">Lufthansa</div>
+              <div class="airline-info">
+                  Lufthansa is the largest German airline and one of the leading carriers in Europe. Headquartered in Frankfurt, it operates flights to destinations across the globe and is a founding member of the Star Alliance.
+              </div>
+          </div>
+      
+          <div class="plane-container">
+              <img class="plane-img animate-plane" src="Public/imgs/airlinesPlanes/Lufthansa.png" alt="Lufthansa Plane">
+          </div>
+      
+          <div class="arrow">
+              <svg viewBox="0 0 24 40" fill="none">
+                  <path d="M12 4L12 36" stroke="white" stroke-width="2" stroke-linecap="round"/>
+                  <path d="M18 30L12 36L6 30" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+          </div>
+      </div>
+      
+      <!-- Sixth Row: Plane Left, Card Right -->
+
+      <div class="airline-row">
+          <div class="plane-container">
+              <img class="plane-img animate-plane" src="Public/imgs/airlinesPlanes/airfrance.png" alt="Air France Plane">
+          </div>
+      
+          <div class="airline-card">
+              <div class="airline-logo">
+                  <img src="Public/imgs/airlinesLogos/airfrance.png" alt="Air France Logo">
+              </div>
+              <div class="airline-name">Air France</div>
+              <div class="airline-info">
+                  Air France is the flag carrier of France, headquartered in Paris. A major global airline, it operates extensive domestic and international services and is a founding member of the SkyTeam alliance.
+              </div>
+          </div>
+      </div>
+      
+      <!-- Seventh Row: Card Left, Plane Right -->
+
+      <div class="airline-row">
+          <div class="airline-card">
+              <div class="airline-logo">
+                  <img src="Public/imgs/airlinesLogos/Qatar_Airways_Logo.png2.png" alt="Qatar Airways Logo">
+              </div>
+              <div class="airline-name">Qatar Airways</div>
+              <div class="airline-info">
+                  Qatar Airways is the state-owned flag carrier of Qatar, based in Doha. Renowned for its luxury service and world-class airport, it serves over 170 destinations and has consistently ranked among the world’s top airlines.
+              </div>
+          </div>
+      
+          <div class="plane-container">
+              <img class="plane-img animate-plane" src="Public/imgs/airlinesPlanes/qatar.png" alt="Qatar Airways Plane">
+          </div>
+      
+          <div class="arrow">
+              <svg viewBox="0 0 24 40" fill="none">
+                  <path d="M12 4L12 36" stroke="white" stroke-width="2" stroke-linecap="round"/>
+                  <path d="M18 30L12 36L6 30" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+          </div>
+      </div>
+      
+      <!-- Eighth Row: Plane Left, Card Right -->
+
+      <div class="airline-row">
+          <div class="plane-container">
+              <img class="plane-img animate-plane" src="Public/imgs/airlinesPlanes/turkish.png" alt="Turkish Airlines Plane">
+          </div>
+      
+          <div class="airline-card">
+              <div class="airline-logo">
+                  <img src="Public/imgs/airlinesLogos/turkish.png" alt="Turkish Airlines Logo">
+              </div>
+              <div class="airline-name">Turkish Airlines</div>
+              <div class="airline-info">
+                  Turkish Airlines is the national flag carrier of Turkey, headquartered in Istanbul. It flies to more countries than any other airline in the world, offering extensive connectivity across Europe, Asia, Africa, and the Americas.
+              </div>
+          </div>
+      </div>
+      
+      <!-- Ninth Row: Card Left, Plane Right -->
+
+      <div class="airline-row">
+          <div class="airline-card">
+              <div class="airline-logo">
+                  <img src="Public/imgs/airlinesLogos/saudia.png" alt="SAUDIA Logo">
+              </div>
+              <div class="airline-name">SAUDIA</div>
+              <div class="airline-info">
+                  SAUDIA, also known as Saudi Arabian Airlines, is the national carrier of Saudi Arabia. Headquartered in Jeddah, it connects the Kingdom to destinations across the Middle East, Europe, Asia, Africa, and North America.
+              </div>
+          </div>
+      
+          <div class="plane-container">
+              <img class="plane-img animate-plane" src="Public/imgs/airlinesPlanes/saudi.png" alt="SAUDIA Plane">
+          </div>
+      
+          <div class="arrow">
+              <svg viewBox="0 0 24 40" fill="none">
+                  <path d="M12 4L12 36" stroke="white" stroke-width="2" stroke-linecap="round"/>
+                  <path d="M18 30L12 36L6 30" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+          </div>
+      </div>
+
+      <!-- Tenth Row: Plane Left, Card Right -->
+
+      <div class="airline-row">
+          <div class="plane-container">
+              <img class="plane-img animate-plane" src="Public/imgs/airlinesPlanes/oman.png" alt="Oman Air Plane">
+          </div>
+      
+          <div class="airline-card">
+              <div class="airline-logo">
+                  <img src="Public/imgs/airlinesLogos/oman.png" alt="Oman Air Logo">
+              </div>
+              <div class="airline-name">Oman Air</div>
+              <div class="airline-info">
+                  Oman Air is the national airline of Oman, based in Muscat. Known for its premium service and modern fleet, it offers international flights to destinations across the Middle East, Asia, Africa, and Europe.
+              </div>
+          </div>
+      </div>
+      
+      
+  </div>
+  </div>
+    <footer class="footer-glassy">
+      <div class="footer-grid">
+        <div class="footer-column">
+          <img src="/Public/imgs/comp/logo.png" alt="ATT Logo" class="footer-logo" />
+          <p class="footer-text">Track flights live, anywhere around the world with precision and elegance.</p>
+        </div>
+        <div class="footer-column">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+            <li><a href="airlines.html"><i class="fas fa-plane"></i> Airlines</a></li>
+            <li><a href="airplanes.html"><i class="fas fa-plane-departure"></i> Airplanes</a></li>
+            <li><a href="about.html"><i class="fas fa-info-circle"></i> About</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h4>Contact</h4>
+          <p><i class="fas fa-envelope"></i> contact@attracker.com</p>
+          <div class="footer-socials">
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 Air Traffic Tracker. All rights reserved.</p>
+      </div>
+    </footer>
+  </main>
+</body>
+</html>
+<!--   <div class="map-container">
+ -->
