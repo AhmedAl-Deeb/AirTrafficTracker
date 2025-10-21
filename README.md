@@ -23,10 +23,10 @@ Built with a focus on performance, clarity and modern UX, ATT aims to deliver:
 
 ## Tech Stack
 
-* Front‑end: HTML5, CSS3, modern JavaScript (ES6+)
-* Mapping / visualization: [your map library name] (replace with actual)
-* Back‑end / data: Real‑time flights API(s) + web service layer
-* Deployment: Cloud‑hosted (optionally) + CDN for assets
+* Frontend: HTML5, CSS3, JavaScript (ES6+)
+* Mapping & Visualization: Interactive map rendering with real-time updates
+* Data Source: Live flight data from aviation APIs
+* Deployment: Cloud-hosted with CDN support for fast global access
 
 ## Project Goals
 
