@@ -4,7 +4,7 @@
 
 ## Description
 
-This project powers **Air Traffic Tracker (ATT)**, a sleek, real‑time flight tracking web app available at [https://attracker.live](https://attracker.live). Users can search and explore live flight information, aircraft details and airline data—giving an interactive view of global air traffic.
+This project powers **Air Traffic Tracker (ATT)**, a sleek, real‑time flight tracking web app available at [https://attracker.live](https://attracker.live). Users can search and explore live flight information, aircraft details and airline data giving an interactive view of global air traffic.
 
 Built with a focus on performance, clarity and modern UX, ATT aims to deliver:
 
@@ -31,7 +31,7 @@ Built with a focus on performance, clarity and modern UX, ATT aims to deliver:
 ## Project Goals
 
 * Deliver a high‑quality, real‑time experience for aviation enthusiasts, travellers and developers alike
-* Provide a clean codebase that’s easy to extend—e.g., add new data sources, refine filters, improve UX
+* Provide a clean codebase that’s easy to extend. e.g., add new data sources, refine filters, improve UX
 * Offer an open‑source foundation for learning about real‑time data ingestion, mapping and aviation workflows
 
 ## Getting Started
