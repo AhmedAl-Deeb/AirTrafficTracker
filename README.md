@@ -36,15 +36,11 @@ Built with a focus on performance, clarity and modern UX, ATT aims to deliver:
 
 ## Getting Started
 
-1. Clone this repository:
+* Clone this repository:
 
    ```bash
    git clone https://github.com/YourUsername/air‑traffic‑tracker.git  
    ```
-2. Install dependencies (e.g., `npm install`)
-3. Configure your flight‑data API key(s) (see `config.example.json`)
-4. Run this locally: `npm start` or similar
-5. Open `http://localhost:3000` (or configured port) and start exploring
 
 ## Contributing
 
