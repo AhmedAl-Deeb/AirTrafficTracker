@@ -39,7 +39,7 @@ Built with a focus on performance, clarity and modern UX, ATT aims to deliver:
 * Clone this repository:
 
    ```bash
-   git clone https://github.com/AhmedAl-Deeb/air‑traffic‑tracker.git  
+   git clone https://github.com/AhmedAl-Deeb/AirTrafficTracker.git
    ```
 
 ## Contributing
